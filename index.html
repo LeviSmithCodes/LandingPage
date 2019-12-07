@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>LandingPage</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Inspire</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <body id="bg-image">
+        <header class="container-fluid">
+            <div class="row flex-row">
+                <div class="col-12 d-flex justify-content-end">
+                    <div id="weather">
+                        Your Weather Template
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        A Todo List
+                        <div id="todo-error"></div>
+                        <form onsubmit=""></form>
+                        <div id="todos"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div id="quote">
+                        <h4>
+                            One step, and then another. That's all it ever is.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-<body id="bg-image">
-	<div id="weather">
-		Your Weather Template
-	</div>
-
-	<div id="quote">
-		The Quote
-	</div>
-
-	<div>
-		A Todo List
-		<div id="todo-error"></div>
-		<form onsubmit=""></form>
-		<div id="todos"></div>
-	</div>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-	<script type="module" src="app/main.js"></script>
-</body>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script type="module" src="app/main.js"></script>
+    </body>
 </html>
-<html>
+<html></html>

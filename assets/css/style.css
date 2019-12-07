@@ -1,4 +1,25 @@
-#todo-error{
-  color: red;
-  font-size: 2em;
+#todo-error {
+    color: red;
+    font-size: 2em;
 }
+
+body {
+    color: white !important;
+    text-shadow: 2px 2px black;
+}
+
+header {
+    height: 20vh;
+}
+
+main {
+    height: 60vh;
+}
+
+footer {
+    height: 20vh;
+}
+
+/* #bg-image {
+    background-image: url(https://rocketleague.media.zestyio.com/rl_screen_blog_1.309bf22bd29c2e411e9dd8eb07575bb1.jpg);
+} */
