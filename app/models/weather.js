@@ -11,9 +11,11 @@ export default class Weather {
         this.kelvin = data.main.temp;
         this.temp_max = data.main.temp_max;
         this.temp_min = data.main.temp_min;
+        this.celsius = (data.main.temp - 273.15).toFixed();
+        this.fahrenheit = (((data.main.temp - 273.15) * 9) / 5 + 32).toFixed();
     }
 
     get template() {
-        return /*html*/ `<p>${this.city}<br/>${this.kelvin}</p>`;
+        return /*html*/ `<p>${this.city}<br/>${this.fahrenheit}°F</p>`;
     }
 }

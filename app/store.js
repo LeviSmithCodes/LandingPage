@@ -5,7 +5,8 @@ let _state = {
     weather: new Weather({ name: "loading", main: { temp: 0.0 } }), //temporary fake data
     /**@type {any[]}*/
     todos: [], //TODO change 'any' to your todo model
-    background: [] // REVIEW I need this, right?
+    background: [],
+    quote: []
 };
 
 /** Collection of listeners to be called based on keyed state changes
@@ -13,7 +14,8 @@ let _state = {
  */
 let _listeners = {
     weather: [],
-    background: []
+    background: [],
+    quote: []
 };
 
 /**

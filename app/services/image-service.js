@@ -1,5 +1,5 @@
 import store from "../store.js";
-
+import Background from "../models/background.js";
 // @ts-ignore
 const _imgApi = axios.create({
     baseURL: "//bcw-sandbox.herokuapp.com/api/images",
@@ -10,12 +10,12 @@ const _imgApi = axios.create({
 class ImageService {
     async getBackgroundAsync() {
         let res = await _imgApi.get();
-        console.log("getBackgroundAsync says you got", res);
-        store.commit("background", res);
+        console.log("getBackgroundAsync says you got", res.data);
+        store.commit("background", new Background(res.data));
     }
 
     drawBackground() {
-        document.body.style.backgroundImage = `url(${store.State.background.data.url})`;
+        document.body.style.background = store.State.background.template; //REVIEW why is this squiggling but working? // was using backgroundImage
     }
 }
 
