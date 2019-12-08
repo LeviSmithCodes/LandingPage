@@ -5,7 +5,7 @@ import store from "../store.js";
 //      (be sure to review the HTML as an element already was put there for you)
 
 function drawQuote() {
-    console.log("drawQuote state in Controller says", store.State.quote);
+    // console.log("drawQuote state in Controller says", store.State.quote);
     QuoteService.drawQuote();
 }
 

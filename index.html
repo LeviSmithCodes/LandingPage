@@ -25,11 +25,35 @@
         <main class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <div>
-                        A Todo List
-                        <div id="todo-error"></div>
-                        <form onsubmit=""></form>
-                        <div id="todos"></div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 id="todaysTasks">Today's Tasks</h3>
+                            <div id="todo-error"></div>
+                            <div id="todos">
+                                Add a task to see it displayed here
+                            </div>
+                            <form
+                                class="mx-auto"
+                                onsubmit="app.todoController.addTodo(event)"
+                            >
+                                <div class="form-group mt-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="text"
+                                        id="ItemInput"
+                                        placeholder="New task here!"
+                                    />
+                                    <!-- TODO Why isn't this clearing on submit? -->
+                                    <button
+                                        type="submit"
+                                        class="btn text-white btn-block btn-success"
+                                    >
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
