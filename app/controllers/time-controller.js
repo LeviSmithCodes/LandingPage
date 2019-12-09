@@ -11,13 +11,15 @@ function drawTime() {
     // let time = utcString.slice(-11, -4);
     // console.log("time", time);
     console.log("mytime", dateObj.toString().slice(0, 24));
-    let myDateTime = dateObj.toString().slice(0, 24);
+    let myDateTime = dateObj.toString().slice(0, 21);
 
     document.querySelector("#timeSlot").innerHTML = `${myDateTime}`;
 }
 export default class TimeController {
     constructor() {
         store.subscribe("time", drawTime);
-        setInterval(TimeService.getTimeAsync, 1000);
+        TimeService.getTimeAsync();
+        setInterval(TimeService.getTimeAsync, 15000);
+        // Every 15 seconds produces less errors and lag than every 1 second, unfortunately
     }
 }
