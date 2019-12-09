@@ -41,8 +41,15 @@ footer {
 .list-item-with-check:hover:before {
     font-family: "FontAwesome";
     content: "\f14a";
+    cursor: pointer;
 }
 
+.list-item-already-with-check:hover:before {
+    font-family: "FontAwesome";
+    content: "\f14a";
+    /* content: "<i class=" far fa-square "></i>"; */
+    cursor: pointer;
+}
 /* #bg-image {
     background-image: url(https://rocketleague.media.zestyio.com/rl_screen_blog_1.309bf22bd29c2e411e9dd8eb07575bb1.jpg);
 } */
