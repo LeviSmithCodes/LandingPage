@@ -8,7 +8,9 @@ const _timeApi = axios.create({
 class TimeService {
     async getTimeAsync() {
         let res = await _timeApi.get();
-        console.log("time-service says", res);
+        console.log("time-service says", res.data.datetime);
+        store.commit("time", res);
+        console.log("time in store:", store.State.time);
     }
 }
 
