@@ -26,6 +26,19 @@
                         Your Weather Template
                     </div>
                 </div>
+                <h1
+                    class="col-12 d-flex justify-content-center"
+                    contenteditable="true"
+                >
+                    Welcome, Levi
+                </h1>
+                <div class="col-12 d-flex justify-content-center">
+                    <script
+                        async
+                        src="https://cse.google.com/cse.js?cx=002426717067966774218:up0oexyzhjg"
+                    ></script>
+                    <div class="gcse-search"></div>
+                </div>
             </div>
         </header>
         <main class="container-fluid">
@@ -33,19 +46,19 @@
                 <div class="col-12">
                     <div class="card text-white bg-dark">
                         <div class="card-body">
-                            <h3 id="todaysTasks">Today's Tasks</h3>
+                            <h4 id="todaysTasks">Today's Tasks</h4>
                             <div id="todo-error"></div>
                             <dl id="todos">
                                 Add a task to see it displayed here
                             </dl>
                             <form
-                                class="mx-auto"
+                                class="mx-auto form-inline"
                                 onsubmit="app.todoController.addTodo(event)"
                             >
                                 <div class="form-group mt-3">
                                     <input
                                         type="text"
-                                        class="form-control"
+                                        class="form-control col-8"
                                         name="text"
                                         id="ItemInput"
                                         placeholder="New task here!"
@@ -53,7 +66,7 @@
                                     <!-- TODO Why isn't this clearing on submit? -->
                                     <button
                                         type="submit"
-                                        class="btn text-white btn-block btn-info"
+                                        class="btn text-white btn-info col-4"
                                     >
                                         Submit
                                     </button>
@@ -67,7 +80,8 @@
         <footer class="container-fluid">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                    <div id="quote">
+                    <div id="quote" class="align-items-bottom">
+                        <!-- TODO why can't I get this to align to the bottom?! -->
                         <h4>
                             Quote loading...
                         </h4>

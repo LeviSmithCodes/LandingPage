@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 20vh;
+    min-height: 20vh;
 }
 
 main {
@@ -18,7 +18,7 @@ main {
 }
 
 footer {
-    height: 20vh;
+    max-height: 20vh;
 }
 
 .card {
@@ -26,6 +26,10 @@ footer {
     text-shadow: 0px 0px black;
     width: 20rem;
 }
+
+/* .mySearchID {
+    width: 20rem !important;
+} */
 
 .trash-right {
     float: right;
@@ -67,3 +71,7 @@ strike {
 p {
     margin-bottom: 0px !important;
 }
+
+/* dt {
+    font-size: 0.75em;
+} */
