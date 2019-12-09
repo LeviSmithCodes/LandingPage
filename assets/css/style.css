@@ -27,6 +27,22 @@ footer {
     width: 20rem;
 }
 
+.trash-right {
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.trash-right:hover:before {
+    font-family: "FontAwesome";
+    content: "\f056";
+}
+
+.list-item-with-check:hover:before {
+    font-family: "FontAwesome";
+    content: "\f14a";
+}
+
 /* #bg-image {
     background-image: url(https://rocketleague.media.zestyio.com/rl_screen_blog_1.309bf22bd29c2e411e9dd8eb07575bb1.jpg);
 } */

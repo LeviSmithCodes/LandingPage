@@ -21,6 +21,7 @@ class TodoService {
         console.log("store todo results:", store.State.todos);
     }
 
+    //TODO make list items add to bottom of list
     async addTodoAsync(todo) {
         let res = await todoApi.post("", todo);
         console.log("addTodoAsync and the sandbox says", res);
@@ -40,9 +41,14 @@ class TodoService {
     }
 
     async removeTodoAsync(todoId) {
-        //TODO Work through this one on your own
+        // Work through this one on your own
         //		what is the request type
         //		once the response comes back, what do you need to insure happens?
+
+        console.log("on way to deleting!", todoId);
+        let res = await todoApi.delete(todoId);
+        console.log("removeTodo says:", res);
+        this.getTodosAsync();
     }
 }
 

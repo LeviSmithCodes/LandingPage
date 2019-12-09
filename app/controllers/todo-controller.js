@@ -1,11 +1,12 @@
 import TodoService from "../services/todo-service.js";
 import store from "../store.js";
+import Todo from "../models/todo.js";
 
 //TODO Create the render function
 function _drawTodos() {
     let template = "";
     let todos = store.State.todos;
-    todos.forEach(t => (template += /*html*/ `<ul>${t.description}</ul>`));
+    todos.forEach(t => (template += t.template));
     document.querySelector("#todos").innerHTML = template;
     console.log("drawTodos says", todos);
 }

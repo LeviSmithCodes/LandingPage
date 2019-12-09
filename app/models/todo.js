@@ -8,6 +8,10 @@ export default class Todo {
 
     get template() {
         return /*html*/ `
-      `;
+        <dt>
+          <i class="far fa-square list-item-with-check" onclick="app.todoController.toggleTodoStatus('${this._id}')"></i> 
+          ${this.description} 
+          <i class="fas fa-trash trash-right" onclick="app.todoController.removeTodo('${this._id}')"></i>
+        </dt>`;
     }
 }
