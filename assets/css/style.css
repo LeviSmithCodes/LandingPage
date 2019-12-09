@@ -9,12 +9,16 @@ body {
     background-size: cover !important;
 }
 
+#search-div {
+    text-shadow: 0px 0px black !important;
+}
+
 header {
     min-height: 20vh;
 }
 
 main {
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 footer {
@@ -25,6 +29,19 @@ footer {
     /* color: white; */
     text-shadow: 0px 0px black;
     width: 20rem;
+}
+
+.myScrolling {
+    overflow-y: auto;
+    max-height: 30vh;
+}
+
+.myScrolling::-webkit-scrollbar {
+    display: none;
+}
+
+.subtext {
+    font-size: 0.75em;
 }
 
 /* .mySearchID {
