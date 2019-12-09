@@ -6,6 +6,6 @@ export default class Quote {
     }
 
     get template() {
-        return /*html*/ `<h4>"${this.body}"</h4><h5>-${this.author}</h5>`;
+        return /*html*/ `<p>"${this.body}"</p><p id="author">-${this.author}</p>`;
     }
 }

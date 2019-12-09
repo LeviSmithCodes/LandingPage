@@ -22,7 +22,7 @@ footer {
 }
 
 .card {
-    color: black;
+    /* color: white; */
     text-shadow: 0px 0px black;
     width: 20rem;
 }
@@ -50,6 +50,20 @@ footer {
     /* content: "<i class=" far fa-square "></i>"; */
     cursor: pointer;
 }
-/* #bg-image {
-    background-image: url(https://rocketleague.media.zestyio.com/rl_screen_blog_1.309bf22bd29c2e411e9dd8eb07575bb1.jpg);
-} */
+
+strike {
+    color: grey;
+}
+
+#author {
+    font-size: 0.75em;
+    text-align: center !important;
+}
+
+#quote {
+    align-items: bottom;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
